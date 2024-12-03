@@ -20,5 +20,34 @@ Segui questi passaggi per installare ed eseguire il progetto:
    git clone https://github.com/tuo-username/quiz-calcio.git
    cd quiz-calcio
 
+Installa le dipendenze:
+
+bash
 pip install -r requirements.txt
+
+Avvia il server locale (se il progetto utilizza Flask o un altro framework):
+
+bash
 python app.py
+
+Accedi al quiz nel tuo browser all'indirizzo http://localhost:5000.
+
+Struttura del Progetto
+quiz-calcio/
+├── app.py              # File principale dell'applicazione
+├── questions.json      # Database di domande in formato JSON
+├── templates/          # File HTML per il frontend (se applicabile)
+├── static/             # File CSS, JS e immagini
+├── tests/              # Test unitari per il progetto
+├── requirements.txt    # Elenco delle dipendenze
+└── README.md           # Questo file
+
+
+Esempio di Domanda
+{
+  "id": 1,
+  "question": "Quanti giocatori devono essere presenti in campo per iniziare una partita?",
+  "options": ["10", "11", "7"],
+  "correct_option": 2
+}
+
