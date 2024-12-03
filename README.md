@@ -19,3 +19,6 @@ Segui questi passaggi per installare ed eseguire il progetto:
    ```bash
    git clone https://github.com/tuo-username/quiz-calcio.git
    cd quiz-calcio
+
+pip install -r requirements.txt
+python app.py
